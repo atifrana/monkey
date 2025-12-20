@@ -68,42 +68,35 @@ ForkMonkey now uses **GitHub Models** (gpt-4o) by default for **free** AI-powere
 
 ## Quick Start
 
-### 1. Use This Template
-Click **"Use this template"** → **"Create a new repository"** to create your own monkey!
+### 1. Fork the Repository
+Click the **"Fork"** button (top right) to create your own monkey repository.
 
-> **Why template?** Actions work immediately! Forks require manual enablement.
+### 2. Enable GitHub Actions
+Go to the **Actions** tab in your new repository and click **"I understand my workflows, go ahead and enable them"**.
 
-### 2. Set Up Secrets
-Go to Settings → Secrets and variables → Actions → New repository secret:
+### 3. Run Genesis Workflow
+1. Go to **Actions** tab
+2. Select **"Initialize New Monkey"** from the left sidebar
+3. Click **"Run workflow"** (blue button)
+4. Wait for it to complete - your monkey is being born! 🐵
 
-```
-ANTHROPIC_API_KEY: your_claude_api_key
-```
+### 4. Enable Daily Evolution
+1. In the **Actions** tab, select **"Daily Evolution"**
+2. You'll see a banner saying "This workflow has a schedule that is disabled in forked repositories"
+3. Click **"Enable workflow"** to let your monkey evolve every day!
 
-### 3. Enable GitHub Actions
-Go to Actions tab → Enable workflows
+### 5. Enable GitHub Pages
+1. Go to **Settings** → **Pages**
+2. Under "Build and deployment" > "Source", ensure **GitHub Actions** is selected
+3. Your monkey will be live at `https://<username>.github.io/<repo-name>/`
 
-### 4. Watch Your Monkey Grow!
-Every day at midnight UTC, your monkey evolves automatically.
+### 6. (Optional) Configure AI
+By default, ForkMonkey uses **GitHub Models (gpt-4o)** which is **FREE**!
 
-### 5. View Your Monkey (Live)
-
-Your monkey is automatically deployed to GitHub Pages after each evolution!
-
-🌐 **Live Demo**: `https://<username>.github.io/<repo-name>/`
-
-> **Note**: To enable GitHub Pages, go to **Settings → Pages** and select **GitHub Actions** as the source.
-
-### 6. View Your Monkey (Local)
-```bash
-# Start the beautiful web interface
-./start_web.sh
-
-# Or manually:
-python web/serve.py
-```
-
-Then open http://localhost:8000/web/index.html in your browser!
+If you prefer to use Claude:
+1. Go to **Settings** → **Secrets and variables** → **Actions**
+2. Add a new secret: `ANTHROPIC_API_KEY`
+3. Add a variable: `AI_PROVIDER` = `claude`
 
 ## Your Monkey
 
@@ -186,10 +179,10 @@ forkMonkey/
 ## How to Breed
 
 1. **Fork this repository** - Creates a child monkey
-2. **Child inherits traits** - 50% from parent, 50% random
-3. **Set up your API key** - Add ANTHROPIC_API_KEY secret
-4. **Enable Actions** - Let your child evolve
-5. **Watch it grow** - Different from parent, but related
+2. **Enable Actions** - Go to Actions tab and enable workflows
+3. **Run Genesis** - Run "Initialize New Monkey" workflow
+4. **Child inherits traits** - 50% from parent, 50% random
+5. **Watch it grow** - Evolving daily with free AI!
 
 ## Rarity System
 
