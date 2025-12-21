@@ -1,14 +1,14 @@
 {
-  "generation": 1,
-  "parent_id": null,
-  "dna_hash": "8d4af400362aaf83",
+  "generation": 2,
+  "parent_id": "3308fa1670982a67",
+  "dna_hash": "af17fbca588d6c76",
   "mutation_count": 0,
-  "birth_timestamp": 149228,
+  "birth_timestamp": 211819,
   "traits": {
     "body_color": {
-      "value": "tan",
-      "rarity": "common",
-      "gene_sequence": "11949536"
+      "value": "golden",
+      "rarity": "uncommon",
+      "gene_sequence": "158495e5"
     },
     "face_expression": {
       "value": "neutral",
@@ -16,24 +16,24 @@
       "gene_sequence": "374db983"
     },
     "accessory": {
-      "value": "bandana",
+      "value": "bow",
       "rarity": "common",
-      "gene_sequence": "eef7e9dc"
+      "gene_sequence": "22acdd9b"
     },
     "pattern": {
-      "value": "solid",
+      "value": "gradient",
       "rarity": "common",
-      "gene_sequence": "a55312dd"
+      "gene_sequence": "8f053269"
     },
     "background": {
-      "value": "mountains",
+      "value": "city",
       "rarity": "uncommon",
-      "gene_sequence": "ec41435d"
+      "gene_sequence": "2071a1d4"
     },
     "special": {
-      "value": "shadow",
-      "rarity": "uncommon",
-      "gene_sequence": "db06738c"
+      "value": "none",
+      "rarity": "common",
+      "gene_sequence": "9f7c3055"
     }
   },
   "rarity_score": 13.333333333333334
